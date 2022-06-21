@@ -50,7 +50,7 @@ export default function KeyFeature() {
         />
         <Grid sx={styles.grid}>
           {data.map((item, i) => {
-            <FeatureCard
+            <FeatureCardColumn
               key={item.id}
               src={item.imgSrc}
               alt={item.altText}
