@@ -9,28 +9,28 @@ module.exports = withPlugins([optimizedImages], { target: "serverless" });
 //   },
 // };
 
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
-      },
-    ],
-  },
-};
+// module.exports = {
+//   module: {
+//     rules: [
+//       {
+//         test: /\.(png|jpe?g|gif)$/i,
+//         use: [
+//           {
+//             loader: "file-loader",
+//           },
+//         ],
+//       },
+//     ],
+//   },
+// };
 
-module.exports = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
+// module.exports = {
+//   webpack(config) {
+//     config.module.rules.push({
+//       test: /\.svg$/,
+//       use: ["@svgr/webpack"],
+//     });
 
-    return config;
-  },
-};
+//     return config;
+//   },
+// };
