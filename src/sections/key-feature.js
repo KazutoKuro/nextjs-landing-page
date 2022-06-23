@@ -49,15 +49,15 @@ export default function KeyFeature() {
           title="Meet the feature of our product"
         />
         <Grid sx={styles.grid}>
-          {data.map((item, i) => {
+          {data.map((item) => (
             <FeatureCardColumn
               key={item.id}
               src={item.imgSrc}
               alt={item.altText}
               title={item.title}
               text={item.text}
-            />;
-          })}
+            />
+          ))}
         </Grid>
       </Container>
     </section>
